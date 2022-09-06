@@ -54,7 +54,7 @@ const typeDefs = gql`
         getProduct(id:ID):Products,
         
         getCarts: [Carts],
-        getCart(id: ID): Carts
+        getCart(id:ID): Carts
 
         Users:[User],
         getUser(id:ID):User,

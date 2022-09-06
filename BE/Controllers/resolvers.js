@@ -115,7 +115,12 @@ const resolvers = {
                 // TotalPrice: args.TotalPrice
             })
             // return newToCart.save();
-            return newToCart.save();
+            // return newToCart.save();
+            const res = await newToCart.save();            
+            return {
+                id: res.id,
+                ...res._doc
+            };
         },
         deleteToCarts: async (root, args) => {
             await Cart.findById(args.id)
