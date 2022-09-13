@@ -11,8 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "@graphql-tools/schema": "^8.5.0",
+    "PubSub": "^4.0.0",
     "apollo-server": "^3.10.0",
     "apollo-server-express": "^3.10.0",
+    "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
     "build": "^0.1.4",
     "cors": "^2.8.5",
@@ -26,7 +28,6 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.4.5",
     "nodemon": "^2.0.19",
-    "PubSub": "^4.0.0",
     "subscriptions-transport-ws": "^0.11.0"
   },
   "description": ""

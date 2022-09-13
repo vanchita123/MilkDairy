@@ -1,5 +1,7 @@
 import { ApolloError } from "apollo-server-express";
 import User from "../../Models/User.js";
+import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
 
 export default {
     Query: {

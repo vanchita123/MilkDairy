@@ -5,8 +5,10 @@ export default gql`
         id: ID
         ProductName: String
         ProductWeight: Number
+        ProductQty: Number
         ProductPrice: Number
         ProductImage: String
+        TotalPrice: Number
     }
 
     type Query {
@@ -18,8 +20,10 @@ export default gql`
         addToCarts(
             ProductName: String
             ProductWeight: Number
+            ProductQty: Number
             ProductPrice: Number
             ProductImage: String
+            TotalPrice: Number
         ):Carts
 
         deleteToCarts(id: ID): String

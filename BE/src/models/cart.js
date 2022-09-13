@@ -6,10 +6,12 @@ const CartSchema = new mongoose.Schema({
         require: true 
     },
     ProductWeight: Number,
+    ProductQty: Number,
     ProductPrice: Number,
     ProductImage: String,
+    TotalPrice: Number
 }, { timestamps: true });
 
-const Carts = mongoose.model("Cart", CartSchema);
+const Carts = mongoose.model("Carts", CartSchema);
 
  export default Carts;
